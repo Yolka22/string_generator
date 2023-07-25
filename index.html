@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="generator">
+        <label for="length">Введіть довжину рядка:</label>
+        <input type="number" id="length" min="1" /><br />
+
+        <input type="checkbox" id="includeDigits" />
+        <label for="includeDigits">Цифри (0-9)</label><br />
+
+        <input type="checkbox" id="includeUppercase" />
+        <label for="includeUppercase"
+          >Латинські літери у верхньому регістрі (A-Z)</label
+        ><br />
+
+        <input type="checkbox" id="includeLowercase" />
+        <label for="includeLowercase"
+          >Латинські літери у нижньому регістрі (a-z)</label
+        ><br />
+
+        <button id="generateBtn">Generate</button><br />
+
+        <div id="output" readonly></div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>
